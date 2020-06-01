@@ -80,7 +80,6 @@ class RegisterPage(BasePage):
         # Zapisuję widoczne błędy do listy visible_error_notices
         for error in error_notices:
             if error.is_displayed():
-
                 visible_error_notices.append(error)
         # Sprawdzam, czy widoczna jest właściwa liczba błędów
         print("visible_error_notices ",len(visible_error_notices))
