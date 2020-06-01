@@ -8,13 +8,13 @@ Python, Selenium, ddt library, Chromedriver
 
 You can easly install it on Ubuntu:
 
-Python 3.x
+###Python 3.x
 
-`sudo apt install python3-pip`
+`pip install -r requirements.txt`
 
-`pip3 install selenium`
+You also need to install ChromeDriver
 
-You also need to install ChromeDriver 
+`sudo ln -s /your_project_folder/DDT-with-Python-Selenium/chromedriver /usr/bin`
 
 The folder structure for exemple looks like:
 
