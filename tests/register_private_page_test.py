@@ -250,7 +250,7 @@ class RegistrationPrivateTest(BaseTest):  #dziedziczymy z klasy BaseTest
         rp.accepts()
         rp.submit()
 
-        rp.verify_visible_errors(2, ["Wprowadź prawidłowy adres e-mail.","Wprowadź prawidłowe dane"])
+        rp.verify_visible_errors(2, ["Wprowadź prawidłowy adres e-mail.","Wartość nieprawidłowa, prosimy o sprawdzenie formatu"])
 
 
     file_path = os.path.join(CUR_DIR, '..', 'data/bad_phone.csv')
