@@ -6,7 +6,7 @@ class HomePageLocators():
 
 class LoginPageLocators():
     """ Slektory strony logowania"""
-    REJESTRACJA_BTN = (By.XPATH, '//*[@id="main"]/article/div/section[2]/button')
+    REJESTRACJA_BTN = (By.XPATH, '//*[contains(text(),\'Utwórz konto\')]')
 
 
 
