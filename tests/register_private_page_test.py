@@ -176,6 +176,7 @@ class RegistrationPrivateTest(BaseTest):  #dziedziczymy z klasy BaseTest
         rp.accepts()
         rp.submit()
 
+
         rp.verify_visible_errors(2, ["Wprowadź prawidłowy adres e-mail.","Wprowadź prawidłowe dane"])
 
     file_path = os.path.join(CUR_DIR, '..', 'data/bad_post_code.csv')
