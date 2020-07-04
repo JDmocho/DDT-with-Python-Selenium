@@ -20,9 +20,9 @@ The folder structure for exemple looks like:
 
     
     ├── data
-    │   ├── bad_adres.cvc
-    │   ├── bad_city.cvc
-    │   ├── bad_emails.cvc
+    │   ├── bad_adres.csv
+    │   ├── bad_city.csv
+    │   ├── bad_emails.csv
     │   └── ...
     ├── library
     │   └── GetData.py
