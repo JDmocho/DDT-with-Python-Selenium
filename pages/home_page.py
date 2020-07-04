@@ -12,5 +12,5 @@ class HomePage(BasePage):
     def _verify_page(self):
         WebDriverWait(self.driver, 40).until(EC.presence_of_element_located(HomePageLocators.ZALOGUJ_BTN))
         WebDriverWait(self.driver, 40).until(EC.element_to_be_clickable(HomePageLocators.ZALOGUJ_BTN))
-        assert "ZARA Polska / Poland | Nowa Kolekcja Online" in self.driver.title
+        assert "ZARA Polska / Poland | WYPRZEDAŻ" in self.driver.title
         print("Weryfikacja strony HomePage")
