@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
-import os
 import csv
+
 
 def get_data(csv_path):
 
