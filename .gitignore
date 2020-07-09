@@ -130,4 +130,4 @@ dmypy.json
 .idea/
 
 .log
-__pycache__
+*/__pycache__
