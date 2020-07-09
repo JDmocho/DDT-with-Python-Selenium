@@ -10,7 +10,7 @@ In this exemple we are going to test website: https://www.zara.com/pl/
 - selenium 3.141.0
 - Chrome 83.0.4103.116
 
-###Before you start:
+### Before you start:
 
 Install selenium, ddt. You can use pip (packege manager)
 
@@ -38,7 +38,7 @@ You can create symbolic link
 `sudo ln -s /your_project_folder/DDT-with-Python-Selenium/chromedriver /usr/local/bin`
 
 
-###The folder structure for example looks like:
+### The folder structure for example looks like:
 
     
     ├── data
