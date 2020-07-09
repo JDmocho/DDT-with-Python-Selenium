@@ -1,12 +1,12 @@
 import unittest
 from tests.register_form import RegisterForm
 
-# Pobierz test, które chcesz uruchomić
+# Load tests from test sase
 registration_test_1 = unittest.TestLoader().loadTestsFromTestCase(RegisterForm)
 
 
-# Stwórz Test Suita
+# Create TestSuite
 test_suite = unittest.TestSuite([registration_test_1])
 
-# odpal
+# Run
 unittest.TextTestRunner(verbosity=2).run(test_suite)
