@@ -12,6 +12,5 @@ class BaseTest(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.driver.delete_all_cookies()
 
-
     def tearDown(self):
         self.driver.quit()

@@ -15,6 +15,7 @@ import os
 # Get actual DIR
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 
+
 @ddt
 class LoginForm(BaseTest):
     """Testing the login form."""
@@ -33,7 +34,6 @@ class LoginForm(BaseTest):
         log_in = self.driver.find_element(*LoginPageLocators.LOG_IN_BTN).text
         self.assertEqual(log_in, "LOGOWANIE")
 
-
     def test_empty_login_form(self):
         """Register with empty data should fail."""
 
@@ -44,8 +44,10 @@ class LoginForm(BaseTest):
         self.driver.find_element(*LoginPageLocators.ERROR_EL_LOGIN)
         error_elements = self.driver.find_elements(*LoginPageLocators.ERROR_EL_LOGIN)
 
+        error_is_visible = False
+
         for el in error_elements:
-            if(el.text == "To pole jest obowiązkowe."):
+            if el.text == "To pole jest obowiązkowe.":
                 error_is_visible = True
                 break
             else:
@@ -66,8 +68,10 @@ class LoginForm(BaseTest):
         self.driver.find_element(*LoginPageLocators.SIGN_IN_BTN).submit()
         error_elements = self.driver.find_elements(*LoginPageLocators.ERROR_EL_LOGIN_EMAIL)
 
+        error_is_visible = False
+
         for el in error_elements:
-            if(el.text == "Wprowadź prawidłowy adres e-mail."):
+            if el.text == "Wprowadź prawidłowy adres e-mail.":
                 error_is_visible = True
                 break
             else:
@@ -82,7 +86,6 @@ class LoginForm(BaseTest):
     def test_incorrect_password(self, password):
         """Register with incorrect password or repassword should fail."""
 
-
         self.driver.find_element(*LoginPageLocators.LOG_IN_BTN).click()
         self.driver.find_element(*LoginPageLocators.FILL_EMAIL).send_keys("joanna@joanna.pl")
         self.driver.find_element(*LoginPageLocators.FILL_PASS).send_keys(password)
@@ -91,15 +94,5 @@ class LoginForm(BaseTest):
         self.assertEqual(error_text, "DANE DOSTĘPU SĄ NIEPRAWIDŁOWE")
 
 
-
-
-if __name__=="__main__":
+if __name__ == "__main__":
     unittest.main(verbosity=2)
-
-
-
-
-
-
-
-
