@@ -1,4 +1,4 @@
-# -*- condig: UTF-8 -*-
+# -*- coding: UTF-8 -*-
 """
 Test login functionality
 Version 1.1
